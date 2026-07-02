@@ -6,23 +6,23 @@
 <title>ラーメン二郎 営業状況ボード</title>
 <style>
   :root{
-    --paper: #ece4d0;
-    --paper-deep: #ddd2b4;
-    --ink: #262220;
-    --ink-soft: #5c554c;
-    --jiro-red: #ac3b2c;
+    --paper: #f2f3f0;
+    --paper-deep: #e3e6e1;
+    --ink: #172542;
+    --ink-soft: #4b5972;
+    --jiro-red: #cf3627;
     --open-green: #3d6b46;
     --open-green-deep: #2a4a31;
-    --closed-slate: #6d6558;
-    --line: #c7bc9d;
-    --card-bg: #f6f1e4;
+    --closed-slate: #5a6478;
+    --line: #cfd4d0;
+    --card-bg: #fbfbf9;
   }
   *{ box-sizing: border-box; }
   html,body{ margin:0; padding:0; }
   body{
     background: var(--paper);
     background-image:
-      radial-gradient(circle at 1px 1px, rgba(38,34,32,0.05) 1px, transparent 0);
+      radial-gradient(circle at 1px 1px, rgba(23,37,66,0.06) 1px, transparent 0);
     background-size: 14px 14px;
     color: var(--ink);
     font-family: "Hiragino Sans", "Yu Gothic", "Segoe UI", system-ui, sans-serif;
@@ -43,7 +43,7 @@
     font-size: 11px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: #c9b98f;
+    color: #e5836f;
     font-weight: 700;
   }
   h1{
@@ -58,7 +58,7 @@
     align-items: baseline;
     gap: 14px;
     flex-wrap: wrap;
-    border-top: 1px solid rgba(236,228,208,0.25);
+    border-top: 1px solid rgba(242,243,240,0.22);
     padding-top: 14px;
   }
   .clock{
@@ -68,12 +68,12 @@
     font-weight: 700;
     letter-spacing: 0.03em;
   }
-  .clock-date{ font-size: 14px; color: #c9b98f; }
+  .clock-date{ font-size: 14px; color: #b9c4d9; }
   .disclaimer{
     margin: 14px 0 0;
     font-size: 12.5px;
     line-height: 1.6;
-    color: #d8cead;
+    color: #c6cfdf;
     max-width: 70ch;
   }
 
@@ -126,7 +126,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 16px;
-    color: #f6f1e4;
+    color: var(--card-bg);
   }
   .open-head{ background: var(--open-green-deep); }
   .closed-head{ background: var(--closed-slate); }
